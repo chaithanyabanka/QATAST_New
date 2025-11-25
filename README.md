@@ -60,38 +60,39 @@ This project contains a Playwright + TypeScript based automated UI test suite fo
 # Setup Instructions
 
 1. Clone the repository:
-
+```bash
 git clone <your-repo-url>
 cd <your-repo-folder>
-
+```
 
 2. Install dependencies:
 
+```bash
 npm install
-
+```
 
 ---
 
 # Running Tests
 
 Run all tests headlessly:
-
+```bash
 npx playwright test
-
+```
 
 Run tests with browser UI visible:
-
+```bash
 npx playwright test --headed
-
+```
 
 ---
 
 # Test Reports
 
 After tests run, generate and view an HTML report with:
-
+```bash
 npx playwright show-report
-
+```
 
 ---
 
