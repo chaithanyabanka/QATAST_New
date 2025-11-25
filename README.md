@@ -49,3 +49,74 @@ If you have the time and inclination, feel free to attempt Task 2 (bonus task), 
 ## 📨 Presenting/Submitting Your Solution
 
 Please download and email your solution from a private Github repository you have created and send the Zip back to us. Any issues please do get in touch with the recruiter you have been speaking with.
+
+
+## Automated Test Suite Overview
+
+This project contains a Playwright + TypeScript based automated UI test suite for the UK Government “Calculate your holiday entitlement” page. It demonstrates maintainable, data-driven tests using a Page Object Model (POM) design.
+
+---
+
+# Setup Instructions
+
+1. Clone the repository:
+
+git clone <your-repo-url>
+cd <your-repo-folder>
+
+
+2. Install dependencies:
+
+npm install
+
+
+---
+
+# Running Tests
+
+Run all tests headlessly:
+
+npx playwright test
+
+
+Run tests with browser UI visible:
+
+npx playwright test --headed
+
+
+---
+
+# Test Reports
+
+After tests run, generate and view an HTML report with:
+
+npx playwright show-report
+
+
+---
+
+# Data-Driven Testing
+
+Test inputs and expected results are dynamically loaded from `public/data/testData.json`. Extend or modify this JSON to add new scenarios without changing test code.
+
+---
+
+
+# Project Structure
+
+| Folder / File       | Purpose                                                |
+|---------------------|--------------------------------------------------------|
+| `/tests`            | Test specification files                               |
+| `/pages`            | Page Object Model classes encapsulating UI interactions|
+| `/data`             | JSON files containing test data                        |
+| `playwright.config.ts` | Playwright configuration (browsers, retries, tracing)|
+
+---
+
+# Future Enhancements
+
+- Broaden test coverage with negative and edge cases
+- Integrate accessibility testing and reporting
+- Add CI/CD pipeline for automated validation
+
+# See [Task.md](./AccessibilityTask.md) for the full accessibility review and bug reports.

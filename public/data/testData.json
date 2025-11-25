@@ -1,0 +1,20 @@
+[
+  {
+    "daysWorked": "5",
+    "entitlementBasis": "days worked per week",
+    "leaveYearOption": "for a full leave year",
+    "expectedEntitlement": "28"
+  },
+  {
+    "daysWorked": "4",
+    "entitlementBasis": "days worked per week",
+    "leaveYearOption": "for a full leave year",
+    "expectedEntitlement": "22.4"
+  },
+  {
+    "daysWorked": "2",
+    "entitlementBasis": "days worked per week",
+    "leaveYearOption": "for a full leave year",
+    "expectedEntitlement": "11.2"
+  }
+]
